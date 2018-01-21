@@ -1,0 +1,61 @@
+
+/************
+GENERAL
+************/
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.full-width-container {
+width: 100%;
+max-width: 100%;
+margin: 0 auto;
+}
+
+
+
+/************
+HEADER
+************/
+
+ header {
+   height: 50vh;
+  background-color: #ccc;
+}
+
+/* logo */
+
+/* navigation */
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.main-heading {
+
+}
+
+.main-heading + p {
+  margin: 0;
+}
+
+
+
+/************
+SERVICES section
+************/
+
+.services {
+  background-color: #bbb;
+}
