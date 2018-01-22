@@ -10,26 +10,28 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <header class="">
+    <header class="header">
       <div class="row">
         <div class="logo six columns">
           logo
         </div>
         <nav class="navbar six columns">
-          <ul>
+          <!-- <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#services">services</a></li>
             <li><a href="#work">work</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#contact">contact</a></li>
-          </ul>
+          </ul> -->
         </nav>
       </div>
       <h1 class="main-heading">Vlad Freishmidt</h1>
       <p>Web Developer</p>
+      <a class="button button-primary" href="#work">see my work</a>
     </header>
+  </div> <!-- video wrapper ends here -->
     <!-- section SERVICES -->
-    <section id="services" class="services">
+    <section id="services" class="services section">
       <h3 class="section-heading">SERVICES</h3>
       <div class="container">
         <div class="row">
@@ -39,6 +41,7 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur
               adipisicing elit. Sunt, atque.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, officia!
             </p>
           </div>
           <div class="four columns">
@@ -47,6 +50,7 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur
               adipisicing elit. Sunt, atque.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, officia!
             </p>
           </div>
           <div class="four columns">
@@ -55,12 +59,13 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur
               adipisicing elit. Sunt, atque.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, officia!
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section id="work" class="portfolio">
+    <section id="work" class="portfolio section">
       <!-- SECTION WORK -->
       <h3 class="section-heading">WORK</h3>
       <div class="container">
@@ -72,7 +77,7 @@
           <img src="images/portfolio-item-002.jpg" alt="portfolio item">
           </div>
           <div class="three columns portfolio-item">
-          #003 work
+          <img src="images/portfolio-item-003.jpg" alt="portfolio item">
           </div>
           <div class="three columns portfolio-item">
           #004 work
@@ -95,12 +100,18 @@
       </div>
     </section>
     <!-- SECTION ABOUT -->
-    <section id="about" class="about">
+    <section id="about" class="about section">
       <h3 class="section-heading">ABOUT</h3>
       <div class="container">
         <div class="row">
           <div class="eight columns">
-            <p>The story how I got into web development Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde ipsum possimus aut mollitia. Ad, aliquam esse! Ducimus reprehenderit ipsa, voluptatum ullam saepe! Delectus eos, adipisci asperiores neque. Saepe modi eum labore a molestias rem, rerum reprehenderit possimus. Nihil, vel.</p>
+            <p>
+              The story how I got into web development Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Quis unde ipsum possimus aut mollitia.
+              Ad, aliquam esse! Ducimus reprehenderit ipsa, voluptatum ullam saepe!
+              Delectus eos, adipisci asperiores neque. Saepe modi eum labore a molestias rem,
+              rerum reprehenderit possimus. Nihil, vel.
+            </p>
           </div>
           <div class="four columns">
             <img src="" alt="Vlad Freishmidt Web Developer">
@@ -109,18 +120,36 @@
       </div>
     </section>
     <!-- SECTION FORM -->
-    <section id="contact" class="form">
+    <section id="contact" class="contact section">
       <h3 class="section-heading">contact me</h3>
-      <form action="POST">
-        <label for="name">Your Name:</label><input type="text" name="name">
-        <label for="email">Email:</label><input type="email">
-        <label for="message">Ya Message</label><textarea name="name" rows="40" cols="40"></textarea>
-        <input type="submit" class="button button-primary u-full-width">
-      </form>
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <form action="#" method="post">
+          		<!-- <p> -->
+          			<label for="username">Your name</label>
+          			<input id="username" name="username" type="text">
+          		<!-- </p> -->
+          		<p>
+          			<label for="email">Email</label>
+          			<input id="email" name="email" type="email">
+          		</p>
+          		<!-- <p> -->
+          			<label for="message">Write a message</label>
+          			<textarea id="message" name="message"></textarea>
+          		<!-- </p> -->
+          		<p>
+          			<input type="submit" value="SUBMIT" id="submit">
+          		</p>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- <footer>
+    <!-- footer -->
+    <footer>
       <p>developed by Vlad Freishmidt</p>
       <p>all rights reserved &copy; 2018</p>
-    </footer> -->
+    </footer>
 </body>
 </html>
