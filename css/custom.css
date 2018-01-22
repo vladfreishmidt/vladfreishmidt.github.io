@@ -124,6 +124,39 @@ WORK section
    height: 100vh;
  }
 
+ .portfolio-item {
+   position: relative;
+ }
+
+ .work-description {
+   color: #fff;
+   font-size: 1.5em;
+   padding: 10px;
+   position: absolute;
+   bottom: 0;
+   background-color: rgba(50, 195, 240, .8);
+   height: 150px;
+   width: 100%;
+   margin: 0 auto !important;
+   border-radius: 20px;
+   border-bottom-right-radius: 0px;
+   border-bottom-left-radius: 0px;
+   opacity: 0;
+   transition: opacity .5s ease-out;
+ }
+
+  .portfolio-item:hover > .work-description {
+    opacity: 1;
+  }
+
+  .portfolio-item:hover > img {
+    width: 120%;
+  }
+
+ p.work-description{
+   margin: 0;
+ }
+
 /************
 ABOUT section
 ************/
