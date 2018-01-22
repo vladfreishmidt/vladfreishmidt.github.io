@@ -8,13 +8,21 @@ box-sizing: border-box;
 }
 
 body {
+  position: relative;
   text-align: center;
 }
 
-.full-width-container {
-width: 100%;
-max-width: 100%;
-margin: 0 auto;
+img {
+  max-width: 100%;
+}
+
+.fa {
+  font-size: 40px;
+}
+
+.section-heading {
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 
@@ -24,11 +32,24 @@ HEADER
 ************/
 
  header {
-   height: 50vh;
+  height: 100vh;
   background-color: #ccc;
 }
 
+header .row {
+  background-color: rgba(0, 0, 0, .4);
+  vertical-align: middle;
+}
+
+header h1 {
+  /* margin-top: 20%; */
+}
+
 /* logo */
+
+ .logo {
+   padding-top: 20px;
+ }
 
 /* navigation */
 
@@ -40,6 +61,21 @@ HEADER
 
 .navbar li {
   display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.navbar a {
+  display: block;
+  width: 75.59px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
+}
+
+.navbar a:hover {
+  background-color: lightblue;
 }
 
 .main-heading {
@@ -59,3 +95,36 @@ SERVICES section
 .services {
   background-color: #bbb;
 }
+
+/************
+WORK section
+************/
+
+/************
+ABOUT section
+************/
+.about {
+
+}
+.about p {
+
+}
+
+
+
+/************
+FOOTER
+************/
+
+ footer {
+   background: #f4f4f4;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+ }
+
+ footer p {
+
+   margin: 0;
+ }

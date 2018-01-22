@@ -6,10 +6,10 @@
   <title>Vlad Freishmidt | Web Developer</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-  <div class="">
     <header class="">
       <div class="row">
         <div class="logo six columns">
@@ -18,58 +18,109 @@
         <nav class="navbar six columns">
           <ul>
             <li><a href="#home">home</a></li>
-            <li><a href="#home">services</a></li>
-            <li><a href="#home">work</a></li>
-            <li><a href="#home">about</a></li>
-            <li><a href="#home">contact</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </div>
       <h1 class="main-heading">Vlad Freishmidt</h1>
       <p>Web Developer</p>
     </header>
-    <section class="services">
-      <h2>SERVICES</h2>
+    <!-- section SERVICES -->
+    <section id="services" class="services">
+      <h3 class="section-heading">SERVICES</h3>
       <div class="container">
-        <div class="skills row">
+        <div class="row">
           <div class="four columns">
-            <h3>Marketing</h3>
-            <p></p>
+            <i class="fa fa-id-card-o" aria-hidden="true"></i>
+            <h4>Marketing</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Sunt, atque.
+            </p>
           </div>
           <div class="four columns">
-            <h3>Marketing</h3>
-            <p></p>
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+            <h4>Web Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Sunt, atque.
+            </p>
           </div>
           <div class="four columns">
-            <h3>A Desire to Learn</h3>
-            <p></p>
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <h4>A Desire to Learn</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Sunt, atque.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="portfolio">
-      <h3>WORK</h3>
+    <section id="work" class="portfolio">
+      <!-- SECTION WORK -->
+      <h3 class="section-heading">WORK</h3>
       <div class="container">
         <div class="row">
-          <div class="three columns">
-          #001 work
+          <div class="three columns portfolio-item">
+          <img src="images/portfolio-item-001.jpg" alt="portfolio item">
           </div>
-          <div class="three columns">
-          #002 work
+          <div class="three columns portfolio-item">
+          <img src="images/portfolio-item-002.jpg" alt="portfolio item">
           </div>
-          <div class="three columns">
+          <div class="three columns portfolio-item">
           #003 work
           </div>
-          <div class="three columns">
+          <div class="three columns portfolio-item">
           #004 work
           </div>
         </div>
+        <div class="row">
+          <div class="three columns portfolio-item">
+          #005 work
+          </div>
+          <div class="three columns portfolio-item">
+          #006 work
+          </div>
+          <div class="three columns portfolio-item">
+          #007 work
+          </div>
+          <div class="three columns portfolio-item">
+          #008 work
+          </div>
+        </div>
       </div>
     </section>
-    <section class="about">
-
+    <!-- SECTION ABOUT -->
+    <section id="about" class="about">
+      <h3 class="section-heading">ABOUT</h3>
+      <div class="container">
+        <div class="row">
+          <div class="eight columns">
+            <p>The story how I got into web development Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde ipsum possimus aut mollitia. Ad, aliquam esse! Ducimus reprehenderit ipsa, voluptatum ullam saepe! Delectus eos, adipisci asperiores neque. Saepe modi eum labore a molestias rem, rerum reprehenderit possimus. Nihil, vel.</p>
+          </div>
+          <div class="four columns">
+            <img src="" alt="Vlad Freishmidt Web Developer">
+          </div>
+        </div>
+      </div>
     </section>
-
-  </div>
+    <!-- SECTION FORM -->
+    <section id="contact" class="form">
+      <h3 class="section-heading">contact me</h3>
+      <form action="POST">
+        <label for="name">Your Name:</label><input type="text" name="name">
+        <label for="email">Email:</label><input type="email">
+        <label for="message">Ya Message</label><textarea name="name" rows="40" cols="40"></textarea>
+        <input type="submit" class="button button-primary u-full-width">
+      </form>
+    </section>
+    <!-- <footer>
+      <p>developed by Vlad Freishmidt</p>
+      <p>all rights reserved &copy; 2018</p>
+    </footer> -->
 </body>
 </html>
