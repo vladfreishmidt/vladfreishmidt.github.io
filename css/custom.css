@@ -113,7 +113,17 @@ SERVICES section
 ************/
 
 .services {
-  background-color: #bbb;
+  border-top: 2px solid rgb(50, 195, 240);
+  height: 100vh;
+  color: #fff;
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)),
+  url(../images/services-bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /************
@@ -126,6 +136,7 @@ WORK section
 
  .portfolio-item {
    position: relative;
+   overflow: hidden;
  }
 
  .work-description {
@@ -133,7 +144,7 @@ WORK section
    font-size: 1.5em;
    padding: 10px;
    position: absolute;
-   bottom: 0;
+   bottom: -150px;
    background-color: rgba(50, 195, 240, .8);
    height: 150px;
    width: 100%;
@@ -141,19 +152,19 @@ WORK section
    border-radius: 20px;
    border-bottom-right-radius: 0px;
    border-bottom-left-radius: 0px;
-   opacity: 0;
-   transition: opacity .5s ease-out;
+   opacity: 1;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
  }
 
-  .portfolio-item:hover > .work-description {
-    opacity: 1;
+  .portfolio-item:hover  .work-description {
+    bottom: 0;
   }
 
-  .portfolio-item:hover > img {
-    width: 120%;
-  }
-
- p.work-description{
+  p.work-description{
    margin: 0;
  }
 
