@@ -22,7 +22,6 @@ _____________________________*/
  .container {
    max-width: 1000px;
    margin: 0 auto;
-   overflow: auto;
  }
 
  h1, h2, h3 {
@@ -37,6 +36,7 @@ _____________________________*/
 
  header {
    height: 100vh;
+   max-height: 960px;
    background: url(../img/header-bg.jpg) no-repeat center top / cover;
  }
 
@@ -78,15 +78,36 @@ _____________________________*/
    margin-top: 25%;
  }
  .header-titles h1 {
+   color: rgba(255, 255, 255, .7);
    font-size: 3.75em;
    font-weight: 600;
    text-transform: uppercase;
  }
 
  .header-titles p {
+   color: #fff;
    font-size: 1.875em;
    font-weight: 400;
    margin: 30px 0 0 0;
+ }
+
+ .header-button {
+   width: 80px;
+   height: 80px;
+
+   display: block;
+   margin: 80px auto 0;
+   border-radius: 100%;
+   text-align: center;
+ }
+
+ .header-button a {
+   padding: 20px;
+   display: block;
+   color: rgba(255, 255, 255, .7);
+   text-decoration: none;
+   border: 3px solid #3eb5f1;
+   border-radius: 100%;
  }
 
 /* ___________________________
