@@ -22,10 +22,23 @@ _____________________________*/
  .container {
    max-width: 1000px;
    margin: 0 auto;
+
  }
 
  h1, h2, h3 {
     margin: 0;
+ }
+
+ h2 {
+   color: #3e3a3a;
+   font-weight: 600;
+   font-size: 1.875em;
+   text-transform: uppercase;
+   text-align: center;
+ }
+
+ img {
+   max-width: 100%;
  }
 
 
@@ -36,7 +49,6 @@ _____________________________*/
 
  header {
    height: 100vh;
-   max-height: 960px;
    background: url(../img/header-bg.jpg) no-repeat center top / cover;
  }
 
@@ -92,30 +104,80 @@ _____________________________*/
  }
 
  .header-button {
-   width: 80px;
-   height: 80px;
-
+   border: 5px solid #3eb5f1;
+   color: #dcdcdc;
+   border-radius: 3px;
    display: block;
-   margin: 80px auto 0;
-   border-radius: 100%;
+   width: 240px;
+   padding: 20px 0;
+   margin: 50px auto 0;
+   bottom: -160px;
+   left: 0;
+   right: 0;
+   text-decoration: none;
    text-align: center;
  }
 
- .header-button a {
-   padding: 20px;
-   display: block;
-   color: rgba(255, 255, 255, .7);
-   text-decoration: none;
-   border: 3px solid #3eb5f1;
-   border-radius: 100%;
- }
+
 
 /* ___________________________
-GENERAL
+SERVICES
 _____________________________*/
+
+ .services {
+   width: 90%;
+   border-radius: 5px;
+   margin: 100px auto 0;
+   padding-top: 60px;
+   background: #f6f6f6;
+ }
+
+ .services-item {
+   width: 30%;
+   min-width: 250px;
+   text-align: center;
+   color: #b3b3b3;
+ }
+
+ .services-wrapper {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+
+
+
 /* ___________________________
-GENERAL
+WORK SELECTION
 _____________________________*/
+
+.work {
+  width: 90%;
+  border-radius: 5px;
+  margin: 100px auto 0;
+  padding-top: 60px;
+  background: #f6f6f6;
+}
+
+.work-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  width: 50%;
+}
+
+
+
+
 /* ___________________________
 GENERAL
 _____________________________*/
