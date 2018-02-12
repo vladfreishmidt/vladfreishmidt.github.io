@@ -70,10 +70,10 @@ GENERAL
  .main-section .profile-img {
    display: block;
    margin: 0 auto;
-    max-width: 176px;
-    max-height: 176px;
-    border-radius: 50%;
-    margin-bottom: 3rem;
+   max-width: 176px;
+   max-height: 176px;
+   border-radius: 50%;
+   margin-bottom: 5%;
  }
 
 
@@ -106,7 +106,7 @@ GENERAL
    font-size: 1.1rem;
    line-height: 1.8rem;
    font-weight: 300;
-   margin-bottom: 2rem;
+   margin-bottom: 5%;
  }
 
  .main-section .navigation ul {
@@ -163,11 +163,111 @@ GENERAL
   .about-section {
     background-color: #F56052;
     color: #eaeaea;
+  }
 
+  .about-section h3 {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eaeaea;
+    padding: 1rem;
+    display: inline-block;
   }
 
   .about-section p {
     line-height: 1.8rem;
+  }
+
+  .about-section .skills {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-section .skills li {
+    padding: .5rem;
+  }
+
+  .about-section .services-wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-section .services-item {
+    flex: 0 0 45%;
+    margin-bottom: 2rem;
+  }
+
+  .about-section .services-item i {
+    font-size: 2rem;
+  }
+
+  .about-section .services-item h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: .8rem 0;
+  }
+
+  .about-section .services-item p {
+    line-height: normal;
+    text-align: center;
+  }
+
+
+
+  /* ------------------------------
+  PORTFOLIO SECTION
+  ------------------------------- */
+
+  .portfolio-section {
+    background-color: #3598D9;
+    color: #eaeaea;
+  }
+
+  .work {
+    flex-wrap: wrap;
+  }
+
+  .portfolio-section .work-item {
+    flex: 0 0 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .portfolio-section .work-item img {
+    max-width: 250px;
+  }
+
+  .portfolio-section .work-item .preview-btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: inline-block;
+    background: #3598D9;
+    opacity: 0;
+    transition: .5s;
+  }
+
+  .portfolio-section .work-item:hover > .preview-btns {
+    opacity: 1;
+  }
+
+  .portfolio-section .work-item a {
+    display: inline-block;
+    color: #eaeaea;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+
+
+
+  /* ------------------------------
+  CONTACT SECTION
+  ------------------------------- */
+
+  .contact-section {
+    background-color: #414141;
+    color: #eaeaea;
   }
 
 
@@ -176,5 +276,9 @@ GENERAL
     section {
       width: 100vw;
       height: auto;
+    }
+
+    .container {
+         width: 90%;
     }
   }

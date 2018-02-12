@@ -27,10 +27,10 @@
 
             <nav class="navigation">
                 <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#main">home</a></li>
                 </ul>
             </nav>
 
@@ -48,13 +48,14 @@
            <h2>about</h2>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quos asperiores. Totam voluptate corporis tempora, qui deserunt dolorum minus quam aliquid doloribus, repudiandae pariatur quo. Magnam, ducimus sint nisi nostrum facere vitae animi nulla incidunt, quae natus consequatur quidem doloribus.</p>
 
-           <div class="skills">
+           <div class="skills flex">
                <h3>My Skills</h3>
                <ul>
                    <li>HTML</li>
                    <li>CSS</li>
                    <li>JavaScript</li>
                    <li>jQuery</li>
+                   <li>Bootstrap</li>
                    <li>SASS</li>
                    <li>Git, GitHub</li>
                    <li>Photoshop</li>
@@ -63,20 +64,30 @@
 
            <div class="services">
                <h3>My Services</h3>
-               <div>
-                   <img src="" alt="responsive web pages image">
-                   <h4>Responsive webpages</h4>
-                   <p>I create responsive web pages that fit any device screen</p>
-               </div>
-               <div>
-                   <img src="" alt="responsive web pages image">
-                   <h4>Design into code</h4>
-                   <p>I write clean and valid code for web page design</p>
-               </div>
-               <div>
-                   <img src="" alt="responsive web pages image">
-                   <h4>Help with your site</h4>
-                   <p>I help with existing sites fixing bugs making changes you want</p>
+               <div class="services-wrapper flex">
+                   <div class="services-item">
+                       <i class="fas fa-mobile"></i>
+                       <h4>Responsive sites</h4>
+                       <p>I create responsive web pages that fit any device screen</p>
+                   </div>
+
+                   <div class="services-item">
+                       <i class="fas fa-code"></i>
+                       <h4>Design into code</h4>
+                       <p>I write clean and valid code for web page design</p>
+                   </div>
+
+                   <div class="services-item">
+                       <i class="fas fa-wrench"></i>
+                       <h4>Help with your site</h4>
+                       <p>I help with existing sites fixing bugs making changes you want</p>
+                    </div>
+
+                   <div class="services-item">
+                       <i class="fas fa-clock"></i>
+                       <h4>New..</h4>
+                       <p>coming soon..</p>
+                    </div>
                </div>
            </div>
 
@@ -84,16 +95,52 @@
     </section><!-- About section End-->
 
     <!-- PORTFOLIO SECTION -->
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio-section">
         <div class="container">
+            <h2>portfolio</h2>
+            <div class="work flex">
+                <div class="work-item">
+                    <img src="img/vvoyage-desktop.png" alt="portfolio item">
+                    <div class="preview-btns">
+                        <a class="live-btn" href="#"><i class="fas fa-external-link-alt"></i></i></a>
+                        <a class="github-btn" href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <!-- <img src="img/vvoyage-mobile.jpg" alt="portfolio item"> -->
+                </div>
 
+                <div class="work-item">
+                    <img src="img/clothes-shop-desktop.png" alt="portfolio item">
+                    <div class="preview-btns">
+                        <a class="live-btn" href="#"><i class="fas fa-external-link-alt"></i></i></a>
+                        <a class="github-btn" href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <!-- <img src="img/clothes-shop-mobile.jpg" alt="portfolio item"> -->
+                </div>
+
+                <div class="work-item">
+                    <img src="img/iphone-app-desktop.png" alt="portfolio item">
+                    <div class="preview-btns">
+                        <a class="live-btn" href="#"><i class="fas fa-external-link-alt"></i></i></a>
+                        <a class="github-btn" href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <!-- <img src="img/iphone-app-mobile.jpg" alt="portfolio item"> -->
+                </div>
+
+                <div class="work-item">
+                    <img src="img/roc-desktop.png" alt="portfolio item">
+                    <div class="preview-btns">
+                        <a class="live-btn" href="#"><i class="fas fa-external-link-alt"></i></i></a>
+                        <a class="github-btn" href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section><!-- Portfolio section -->
 
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
-
+            <h2>contact</h2>
         </div>
     </section>
 </body>
