@@ -270,6 +270,42 @@ GENERAL
     color: #eaeaea;
   }
 
+  .contact-section .social-links {
+    margin-bottom: 2rem;
+  }
+
+  .contact-section .social-links a:hover {
+    color: #fff;
+  }
+
+  .contact-section form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contact-section form input, textarea {
+    width: 100%;
+    display: block;
+    margin: 0 auto 1rem auto;
+    padding: .8rem;
+    border: none;
+  }
+
+  .contact-section form button[type=submit] {
+    border: none;
+    padding: 1rem;
+    width: 50%;
+    background-color: #555;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    transition: .3s;
+  }
+
+  .contact-section form button[type=submit]:hover {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
 
 
   @media (max-width: 960px) {
