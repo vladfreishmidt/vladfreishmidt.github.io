@@ -52,16 +52,74 @@ GENERAL
  }
 
  .container {
-   width: 70%;
+   width: 80%;
    margin: 0 auto;
    padding: 5% 1.5rem;
  }
 
 
 
+
  /* ------------------------------
  MAIN SECTION
  ------------------------------- */
+/* mobile nav */
+
+.mobile-nav-container {
+  width: 90%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.main-section .mobile-nav {
+  position: relative;
+  background: rgba(149,149,149, .9);
+  display: none;
+  z-index: 9999;
+}
+
+.main-section .mobile-nav .btn-mobile-nav {
+  display: block;
+  font-size: 2rem;
+  color: #eaeaea;
+  text-align: right;
+}
+.main-section .mobile-nav .mobile-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 50%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+
+}
+
+.main-section .mobile-nav ul.mobile-nav-list.open {
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
+
+.main-section .mobile-nav .mobile-nav-list a {
+  display: block;
+  text-decoration: none;
+  color: #eaeaea;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: block !important;
+}
 
  .main-section {
    background: #f9f9f9;
@@ -110,8 +168,8 @@ GENERAL
  }
 
  .main-section .navigation ul {
-   width: 100%;
-   margin: 0;
+   width: 80%;
+   margin: 0 auto;
    padding: 0;
    margin-bottom: 2rem;
  }
@@ -226,14 +284,15 @@ GENERAL
   }
 
   .portfolio-section .work-item {
-    flex: 0 0 100%;
-    flex-direction: column;
-    justify-content: center;
+    flex: 0 0 50%;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding: 1rem;
     position: relative;
   }
 
   .portfolio-section .work-item img {
-    max-width: 250px;
+    width: 100%;
   }
 
   .portfolio-section .work-item .preview-btns {
@@ -270,6 +329,16 @@ GENERAL
     color: #eaeaea;
   }
 
+  .contact-section p {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .contact-section p a {
+    text-decoration: none;
+    color: #eaeaea;
+  }
+
   .contact-section .social-links {
     margin-bottom: 2rem;
   }
@@ -284,11 +353,14 @@ GENERAL
   }
 
   .contact-section form input, textarea {
+    background-color: #414141;
     width: 100%;
     display: block;
     margin: 0 auto 1rem auto;
     padding: .8rem;
-    border: none;
+    border: 1px solid #f4f4f4;
+    color: #f4f4f4;
+    border-radius: 2px;
   }
 
   .contact-section form button[type=submit] {
